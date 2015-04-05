@@ -1,7 +1,6 @@
 {
   "name": "mobileWebSample",
   "version": "0.0.0",
-  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -10,7 +9,6 @@
     "tests"
   ],
   "dependencies": {
-    "zepto": "~1.1.6",
     "ratchet": "~2.0.2"
   }
 }
