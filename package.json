@@ -1,0 +1,17 @@
+{
+  "name": "mobileWebSample",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://github.com/uryyyyyyy/mobileWebSample",
+  "dependencies": {
+    "babel-loader": "4.0.0",
+    "easymock": "~0.2.9",
+    "gulp": "^3.8.10",
+    "gulp-webpack": "^1.1.2",
+    "gulp-webserver": "~0.9.0",
+    "rimraf": "^2.2.8",
+    "webpack": "~1.4.15",
+    "minimist": "~1.1.0"
+  }
+}
