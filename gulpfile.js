@@ -69,14 +69,14 @@ gulp.task('webpack', ['copyBower'], function (cb) {
 				'process.env': {
 					'NODE_ENV': JSON.stringify('production')
 				}
-			})
+			}),
+			new webpack.optimize.DedupePlugin(),
+			new webpack.optimize.UglifyJsPlugin()
 		]
 	};
-	var uglify = require('gulp-uglify');
 
 	return gulp.src('')
 	.pipe(gulpWebpack(config))
-	.pipe(uglify())
 	.pipe(gulp.dest(''));
 });
 
@@ -111,4 +111,4 @@ gulp.task('watch', ['webpackInc'], function () {
 });
 
 gulp.task("develop", ["devServer", "watch", "copyBower"]);
-gulp.task("build", ["webpack"]);
+gulp.task("build", ["devServer", "webpack"]);
